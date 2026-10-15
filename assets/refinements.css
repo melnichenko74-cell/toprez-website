@@ -1,0 +1,311 @@
+/* Shared vector details. Never depend on a platform's emoji font. */
+.icon{display:inline-block;vertical-align:middle;flex-shrink:0;stroke:currentColor;stroke-width:1.7;fill:none;overflow:visible}
+.icon-spark{stroke-width:1.35}
+.messenger-icon{display:block;width:22px;height:22px;flex-shrink:0;stroke:none!important;fill:none}
+.messenger-icon *{stroke:none!important}
+.tiny-cross,.asterisk,.big-asterisk,.message-symbol,.image-corner,.step-no>span,.breadcrumb>span,.faq summary>span{display:inline-flex;align-items:center;justify-content:center}
+.tiny-cross>.icon{width:24px;height:24px}
+.asterisk>.icon{width:66px;height:66px}
+.big-asterisk>.icon{width:80px;height:80px}
+.message-symbol>.icon{width:230px;height:230px;stroke-width:.8}
+.image-corner>.icon{width:24px;height:24px}
+.step-no>span>.icon{width:20px;height:20px}
+.breadcrumb>span>.icon{width:14px;height:14px}
+.hero-secondary>span{display:inline-flex;align-items:center}
+.hero-secondary>span>.icon{width:18px;height:18px}
+.faq summary>span>.icon{width:22px;height:22px}
+.dialog-close{display:grid;place-items:center}
+.dialog-close>.icon{width:24px;height:24px}
+.prep-finish>span>.icon{width:40px;height:40px}
+
+@media screen {
+  /* One consistent reading scale: display / section / title / body / caption. */
+  body{font-size:16px;line-height:1.7;font-weight:450}
+  h2{font-size:clamp(38px,3.8vw,56px);line-height:1.08;letter-spacing:-.015em}
+  h2 em{color:#686e5e}
+  h3{font-weight:700;letter-spacing:-.025em}
+  p{line-height:1.75;text-wrap:pretty}
+  .eyebrow{font-size:11px;line-height:1.5;letter-spacing:.09em;font-weight:700}
+  .section-number{font-size:10px;line-height:1.5;letter-spacing:.07em}
+  .section-top{margin-bottom:32px;align-items:flex-start}
+  .section-heading{gap:56px;margin-bottom:40px;align-items:flex-start}
+  .section-heading>p{font-size:16px;line-height:1.75;max-width:340px;color:#535b49;margin:3px 0 0}
+  .button{font-size:14px;font-weight:700;gap:20px;min-height:56px;padding:17px 23px}
+  .button-small{font-size:13px;min-height:46px;padding:12px 18px}
+  .text-link{font-size:14px;line-height:1.5;gap:20px;min-height:36px}
+  .text-link:hover{gap:26px}
+  .site-header nav a{font-size:13px;font-weight:550;color:#d4d8ca}
+  .brand-caption{font-size:8px;letter-spacing:.06em;line-height:1.6}
+  .hero-description{font-size:16px;line-height:1.75;color:#c3c8b7;max-width:445px;margin-bottom:28px}
+  .hero h1{font-size:clamp(62px,7.1vw,108px);line-height:1.02}
+  .hero-actions{gap:28px}
+  .hero-secondary{font-size:13px;font-weight:600}
+  .hero-guarantee{font-size:13px;line-height:1.6;margin-top:30px;gap:13px}
+  .hero-guarantee small{display:block;font-size:11px;color:#a3ac92;line-height:1.65;margin-top:3px}
+  .hero-guarantee svg{width:30px;height:30px}
+  .hero-bottom{font-size:9px;letter-spacing:.07em;margin-top:40px}
+  .image-caption{font-size:9px;line-height:1.6}
+  .image-caption span:last-child{font-size:9px;line-height:1.5}
+  .hero-stamp{font-size:9px;letter-spacing:.04em}
+
+  /* A centered complete sequence, aligned with the site's content margins. */
+  .brand-strip{padding:18px 0}
+  .brand-strip>.brand-strip-inner{width:min(1320px,calc(100% - 96px));margin:0 auto;transform:none;display:flex;align-items:center;justify-content:space-between;gap:clamp(10px,1.5vw,25px);font:italic 800 clamp(28px,2.4vw,40px)/1.15 var(--display);letter-spacing:0;white-space:nowrap}
+  .brand-strip .brand-strip-inner>span{font:inherit;line-height:inherit;display:inline-flex;align-items:center;flex-shrink:0}
+  .brand-strip .brand-strip-inner>.icon,.brand-strip .strip-divider>.icon{width:26px;height:26px;flex-shrink:0}
+  .brand-strip .strip-divider{display:contents!important}
+
+  .services,.process,.faq{padding-block:80px}
+  .service-grid{gap:20px}
+  .service-card{padding:28px;min-height:405px}
+  .card-top{margin-bottom:26px}
+  .card-top>span{font-size:12px;font-weight:600;color:#636d53}
+  .service-card h3{font-size:38px;line-height:1.12;margin-bottom:20px}
+  .service-card p{font-size:15px;line-height:1.75;color:#535d46;max-width:none;padding-bottom:50px;margin:0}
+  .service-card-yellow p{color:#424c1a}
+  .circle-link{width:42px;height:42px;right:26px;bottom:26px}
+  .circle-link svg{width:19px;height:19px}
+  .day-grid{gap:70px;align-items:center}
+  .day-copy{grid-template-columns:56px 1fr;gap:0 22px}
+  .day-copy p{font-size:22px;line-height:1.55;margin-bottom:20px;font-weight:550}
+  .day-copy small{font-size:14px;color:#b1bba0;line-height:1.75;max-width:350px;margin-bottom:24px}
+  .asterisk{align-self:start}
+  .asterisk>.icon{width:54px;height:54px}
+  .steps-grid{gap:32px}
+  .process h2{margin-bottom:40px}
+  .step-no{font-size:34px;line-height:1;align-items:center;padding-bottom:20px;margin-bottom:24px;color:#63704f}
+  .step-no>span{color:#5d694b}
+  .steps-grid h3{font-size:19px;line-height:1.35;letter-spacing:-.02em;min-height:52px;margin-bottom:12px}
+  .steps-grid p{font-size:15px;line-height:1.8;color:#535d46;max-width:280px}
+  .steps-grid a{font-size:13px;line-height:1.6;font-weight:650;margin-top:18px;display:inline-flex;align-items:center;gap:10px;min-height:32px}
+  .steps-grid a .icon{width:14px;height:14px}
+  .prep-teaser-grid h2{font-size:44px;line-height:1.1;margin:20px 0 24px}
+  .prep-teaser-grid p{font-size:16px;line-height:1.8;color:#535e46;max-width:425px;margin-bottom:28px}
+  .faq-grid{grid-template-columns:.85fr 1.3fr;gap:80px}
+  .faq h2{margin:24px 0}
+  .faq-grid>div>p{font-size:16px;line-height:1.8;color:#535d46}
+  .faq summary{font-size:17px;line-height:1.55;font-weight:650;padding:23px 0;gap:24px}
+  .faq details>p{font-size:15px;line-height:1.8;color:#535d46;margin:0 34px 24px 0;max-width:600px}
+  .contact-section .section-top{margin-bottom:36px}
+  .contact-grid{gap:70px}
+  .contact-grid h2{font-size:clamp(47px,4.9vw,70px);line-height:1.08}
+  .contact-copy>p{font-size:16px;line-height:1.8;color:#c0cab0;max-width:470px;margin-bottom:28px}
+  .phone-link{font-size:38px;line-height:1.3;font-weight:750}
+  .contact-buttons{gap:12px;flex-wrap:wrap}
+  .contact-buttons .button{font-size:13px;gap:12px;padding:16px;min-height:54px;white-space:nowrap}
+  .contact-buttons .button>.messenger-icon:first-child{width:21px;height:21px}
+  .contact-copy .contact-note{font-size:12px;color:#a6b391;line-height:1.7;margin-top:18px}
+  .footer p{font-size:12px;line-height:1.7;color:#b0ba9e}
+  .footer-inner>a:not(.brand){font-size:12px}
+  .footer-inner>span{font-size:11px;color:#a2ad91}
+  dialog{padding:44px;max-width:540px}
+  dialog .eyebrow{font-size:11px}
+  dialog h2{font-size:52px;line-height:1.08;margin:20px 0 24px}
+  dialog p{font-size:15px;line-height:1.8;color:#535d46}
+  .dialog-phone{font-size:34px;line-height:1.35;margin-bottom:28px}
+  .dialog-actions .button{font-size:13px;gap:12px;min-height:54px}
+  .dialog-actions .button>.messenger-icon{width:21px;height:21px}
+  .dialog-call{font-size:13px;gap:10px}
+  #copy-status{font-size:13px;line-height:1.7;min-height:22px}
+  #open-max{margin-top:4px}
+  .breadcrumb{font-size:12px;line-height:1.6;color:#b0bc99;margin-bottom:36px}
+  .subhero-aside p{font-size:16px;line-height:1.8;color:#bbc6a8}
+  .subhero-aside .text-link{font-size:14px}
+  .big-asterisk{margin-bottom:24px}
+  .prep-layout{grid-template-columns:300px minmax(0,1fr);gap:80px}
+  .checklist-progress{padding:28px}
+  .checklist-progress>.eyebrow{font-size:11px}
+  .progress-count{font-family:var(--text);gap:10px;margin:20px 0 12px;justify-content:flex-start;align-items:baseline}
+  .progress-count strong{font:750 64px/1 var(--text);font-variant-numeric:tabular-nums;letter-spacing:-.055em}
+  .progress-count span{font:600 25px/1.2 var(--text);letter-spacing:-.02em;color:#62704e}
+  .checklist-progress>p{font-size:13px;line-height:1.6;color:#535d46;margin-bottom:18px}
+  .checklist-progress progress{height:6px}
+  .checklist-progress nav{margin:26px 0}
+  .checklist-progress nav a{font-size:13px;line-height:1.65;padding:14px 0;gap:12px;align-items:baseline}
+  .checklist-progress nav a span{font:500 11px/1.6 var(--text);color:#5c6b49;flex-shrink:0}
+  .checklist-actions{gap:12px}
+  .checklist-actions .button{font-size:13px;min-height:48px;padding:14px 16px}
+  .reset-link{font-size:12px;line-height:1.6;min-height:40px;color:#525f41}
+  .checklist-progress>small{font-size:11px;line-height:1.75;color:#5f6c4e;margin-top:12px;text-align:left}
+  .prep-intro>p{font-size:20px;line-height:1.7;letter-spacing:-.02em;max-width:690px;margin-bottom:20px}
+  .prep-intro>small{font-size:14px;line-height:1.8;color:#5d694e;max-width:650px}
+  .prep-step{padding:42px 0}
+  .prep-step-heading{gap:24px;margin-bottom:20px}
+  .prep-no{color:#66784f}
+  .prep-step-heading .eyebrow{font-size:10px;line-height:1.6;color:#60714b}
+  .prep-step h2{font-size:34px;line-height:1.25;margin-top:6px}
+  .prep-description{font-size:16px;line-height:1.8;color:#535e46;max-width:650px;margin-bottom:24px}
+  .check-item{font-size:15px;line-height:1.8;padding:20px;gap:16px;background:#eeefe7}
+  .custom-check{width:24px;height:24px;margin-top:2px}
+  .prep-finish{padding:28px;gap:22px;margin-top:36px;align-items:flex-start}
+  .prep-finish h3{font-size:20px;line-height:1.4;margin-bottom:10px}
+  .prep-finish p{font-size:14px;line-height:1.8;color:#535e46}
+  .texture-content h2{font-size:44px;line-height:1.1;margin-bottom:28px}
+  .texture-tabs{margin-bottom:28px;gap:12px}
+  .texture-tabs button{font-size:14px;font-weight:600;min-height:48px;padding:12px 18px;color:#606e50}
+  .texture-content .eyebrow{font-size:11px;color:#5d7048}
+  .texture-content h3{font-size:26px;line-height:1.4;letter-spacing:-.025em;margin:14px 0 18px}
+  .texture-content p{font-size:16px;line-height:1.85;color:#535e46}
+  .texture-content [role=tabpanel]{min-height:245px}
+  .sample-label>span:first-child,.sample-label>span:last-child{font-size:11px;line-height:1.6}
+  .brand-card p{font-size:15px;line-height:1.8}
+  .brand-card .text-link{font-size:14px}
+  .message-grid h2{font-size:64px;line-height:1.1}
+  .message-grid p{font-size:16px;line-height:1.8;max-width:490px;margin-bottom:28px}
+}
+
+@media screen and (max-width:1200px){
+  .brand-strip>.brand-strip-inner{width:calc(100% - 64px)}
+  .section-heading{gap:36px}.section-heading>p{max-width:300px;font-size:15px}
+  .hero-actions{gap:22px}.hero-actions .button{font-size:13px;padding:17px 18px;gap:16px}
+  .hero-description{font-size:15px;max-width:410px}
+  .day-grid,.contact-grid{gap:48px}
+  .day-copy p{font-size:20px}
+  .service-card{padding:26px}.service-card h3{font-size:36px}.service-card p{font-size:14px}
+  .steps-grid{gap:26px}.steps-grid h3{font-size:18px}.steps-grid p{font-size:14px}
+  .prep-teaser-grid h2{font-size:39px}
+  .contact-grid h2{font-size:5.2vw}.contact-copy>p{font-size:15px}
+  .prep-layout{grid-template-columns:280px minmax(0,1fr);gap:48px}
+  .texture-content h2{font-size:38px}.texture-grid{gap:48px}.texture-preview{height:470px}
+}
+
+@media screen and (max-width:1000px){
+  .section-heading{display:block}.section-heading>p{max-width:540px;margin-top:22px;font-size:16px}
+  .section-heading>p br{display:none}
+  .prep-layout{display:block}.prep-sidebar{position:static;margin-bottom:44px}
+  .checklist-progress{display:grid;grid-template-columns:1fr auto;gap:12px 28px;padding:26px 30px}
+  .checklist-progress>.eyebrow{grid-column:1;grid-row:1}
+  .progress-count{grid-column:2;grid-row:1/3;justify-content:flex-end;margin:0}
+  .progress-count strong{font-size:54px}.progress-count span{font-size:24px}
+  .checklist-progress>p{grid-column:1;grid-row:2;margin:0}
+  .checklist-progress progress{grid-column:1/3;margin:6px 0}
+  .checklist-progress nav{display:none}
+  .checklist-actions{grid-column:1/3;flex-direction:row;justify-content:space-between;align-items:center}
+  .checklist-progress>small{grid-column:1/3;margin:0;font-size:12px}
+  .prep-intro>p,.prep-intro>small{max-width:720px}
+  .prep-step{padding-block:36px}
+  .check-item{font-size:16px}
+}
+
+@media screen and (min-width:681px) and (max-width:900px){
+  .brand-strip .strip-repeat{display:none!important}.brand-strip>.brand-strip-inner{font-size:34px}
+  .hero h1{font-size:7.6vw}.hero-actions{gap:16px}.hero-actions .button{font-size:12px}
+  .hero-guarantee{font-size:12px}.hero-guarantee small{font-size:10px;max-width:240px}
+  .hero-visual{height:490px}
+  .hero-stamp{width:88px;height:88px;font-size:7px;left:-15px}
+  .service-grid{gap:14px}.service-card{padding:22px;min-height:450px}
+  .service-card h3{font-size:30px}.service-card p{font-size:14px;line-height:1.75}
+  .circle-link{bottom:22px;right:22px}
+  .day-copy{grid-template-columns:1fr}.day-copy .asterisk{grid-row:auto;margin-bottom:22px}.day-copy .asterisk>.icon{width:44px;height:44px}
+  .steps-grid{grid-template-columns:1fr 1fr;gap:36px}.steps-grid h3{min-height:0;font-size:20px}.steps-grid p{font-size:16px;max-width:none}
+  .prep-teaser-grid{gap:32px}.prep-teaser-grid h2{font-size:33px}.prep-teaser-grid p{font-size:15px}
+  .faq-grid{grid-template-columns:1fr;gap:30px}.faq h2 br{display:none}.faq-grid>div>p br{display:none}
+  .contact-grid{grid-template-columns:1fr;gap:32px}.contact-grid h2{font-size:64px}.contact-copy{max-width:620px}.contact-copy>p{max-width:600px;font-size:16px}.contact-buttons{flex-direction:row}.contact-buttons .button{font-size:14px}
+  .texture-grid{grid-template-columns:1fr;gap:36px}.texture-preview{height:400px}.texture-content h2{font-size:44px}.texture-content [role=tabpanel]{min-height:0;margin-bottom:26px}
+  .message-grid{grid-template-columns:.5fr 1fr;gap:32px}.message-symbol>.icon{width:140px;height:140px}
+}
+
+@media screen and (max-width:680px){
+  .wrap{width:calc(100% - 40px)}
+  h2{font-size:36px;line-height:1.12}
+  .eyebrow{font-size:10px;letter-spacing:.075em;line-height:1.6}
+  .section-top{margin-bottom:28px;gap:20px;align-items:flex-start}
+  .section-number{font-size:9px;max-width:125px;line-height:1.6}
+  .section-heading{margin-bottom:28px}.section-heading h2{font-size:36px;line-height:1.12}
+  .section-heading>p{font-size:15px;line-height:1.8;max-width:none;margin-top:20px}
+  .brand-caption{font-size:7px}.site-header nav a{font-size:16px}
+  .hero h1{font-size:clamp(54px,13.4vw,88px);margin:24px 0;line-height:1.03}
+  .hero .eyebrow{font-size:9px}
+  .hero-description{font-size:15px;line-height:1.8;max-width:100%;margin-bottom:24px}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:16px}
+  .hero-actions .button{font-size:14px;min-height:56px;justify-content:space-between;padding:17px 20px}
+  .hero-secondary{font-size:13px;justify-content:space-between;padding:2px 0;min-height:32px;max-width:150px}
+  .hero-guarantee{font-size:12px;margin-top:24px;align-items:flex-start}
+  .hero-guarantee small{font-size:11px;max-width:260px;line-height:1.65}
+  .hero-guarantee svg{width:28px;height:28px}
+  .hero-visual{margin:8px 0 0 14px;height:320px}
+  .hero-stamp{font-size:7px;letter-spacing:.04em}.hero-stamp strong{font-size:30px}
+  .image-caption{font-size:9px;left:18px;bottom:20px}.image-caption span:last-child{font-size:9px}
+  .hero-bottom{font-size:8px;margin-top:28px}.tiny-cross>.icon{width:20px;height:20px}
+  .brand-strip{padding:17px 0}
+  .brand-strip>.brand-strip-inner{width:calc(100% - 40px);font-size:clamp(25px,6.9vw,36px);line-height:1.1;gap:12px;transform:none}
+  .brand-strip .brand-strip-inner>.icon{width:20px;height:20px}
+  .brand-strip .strip-repeat{display:none!important}
+  .services,.process,.faq{padding-block:56px}
+  .service-grid{gap:16px}.service-card{padding:26px;min-height:310px}
+  .service-card h3{font-size:34px;line-height:1.15;margin-bottom:18px}
+  .card-top{margin-bottom:24px}.card-top>span{font-size:12px}
+  .service-card p{font-size:15px;line-height:1.8;max-width:none;padding:0 0 44px}
+  .circle-link{right:24px;bottom:22px}
+  .day-section{padding-block:48px}.day-grid{gap:30px}.day-section h2{font-size:clamp(58px,16vw,76px);line-height:1.05}
+  .day-copy{grid-template-columns:36px minmax(0,1fr);gap:0 18px}.day-copy p{font-size:19px;line-height:1.6;margin-bottom:18px}
+  .asterisk>.icon{width:34px;height:34px}.day-copy small{font-size:13px;line-height:1.8;max-width:none;margin-bottom:22px}
+  .day-copy .text-link{font-size:14px}
+  .process h2{font-size:36px;margin-bottom:30px}
+  .steps-grid{grid-template-columns:1fr;gap:0}
+  .steps-grid article{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:20px;padding:26px 0;border-top:1px solid #c5cdb8}
+  .steps-grid article:last-child{border-bottom:1px solid #c5cdb8}
+  .step-no{grid-column:1;grid-row:1/4;display:flex;align-items:flex-start;justify-content:flex-start;font-size:31px;border:0;margin:0;padding:2px 0 0;color:#60734a}
+  .step-no>span{display:none}
+  .steps-grid h3{grid-column:2;font-size:19px;line-height:1.4;min-height:0;margin:0 0 12px}
+  .steps-grid p{grid-column:2;font-size:15px;line-height:1.8;max-width:none;margin:0}
+  .steps-grid a{grid-column:2;font-size:13px;justify-self:start;margin-top:14px;min-height:32px}
+  .preparation-teaser{padding-block:40px 50px}
+  .prep-teaser-grid{gap:30px}.prep-teaser-grid h2{font-size:36px;line-height:1.12;margin:18px 0 22px}
+  .prep-teaser-grid p{font-size:15px;line-height:1.8;max-width:none}.prep-teaser-grid .button{font-size:14px;width:100%;justify-content:space-between}
+  .faq-grid{grid-template-columns:1fr;gap:30px}.faq h2{font-size:38px;margin:20px 0}.faq-grid>div>p{font-size:15px;line-height:1.8}
+  .faq summary{font-size:16px;line-height:1.6;padding:21px 0;gap:20px}.faq summary>span{width:22px;flex-shrink:0}
+  .faq details>p{font-size:15px;line-height:1.8;margin:0 28px 24px 0}
+  .contact-section{padding-block:46px 52px}.contact-section .section-top{margin-bottom:28px}
+  .contact-grid{grid-template-columns:1fr;gap:28px}.contact-grid h2{font-size:clamp(41px,11.4vw,65px);line-height:1.12}
+  .contact-copy>p{font-size:15px;line-height:1.8;max-width:none;margin-bottom:24px}
+  .phone-link{font-size:32px;line-height:1.4;margin-bottom:22px;padding-bottom:18px}
+  .contact-buttons{display:grid;grid-template-columns:1fr;gap:12px}
+  .contact-buttons .button{font-size:14px;min-height:56px;justify-content:flex-start;padding:17px 20px;gap:14px}
+  .contact-buttons .button>.icon:last-child{display:inline-block;margin-left:auto;width:18px;height:18px}
+  .contact-buttons .button>.messenger-icon:first-child{width:23px;height:23px}
+  .contact-copy .contact-note{font-size:12px;line-height:1.7;margin-top:18px}
+  .footer-inner>a:not(.brand){font-size:12px;gap:12px}.footer-inner>span{font-size:11px}.footer{padding-bottom:105px}
+  .mobile-contact{padding-inline:20px}.mobile-contact>a{width:48px;height:48px}.mobile-contact .button{font-size:13px;min-height:48px;padding:14px 18px}
+  dialog{padding:36px 24px 28px;max-width:calc(100% - 32px)}
+  dialog h2{font-size:45px;line-height:1.1;margin:20px 0 22px}dialog p{font-size:15px;line-height:1.8}dialog .eyebrow{font-size:10px}
+  .dialog-phone{font-size:30px;line-height:1.4}.dialog-actions{gap:12px}
+  .dialog-actions .button{font-size:12px;min-height:52px;padding:15px 10px;gap:10px}
+  .dialog-actions .button>.messenger-icon{width:21px;height:21px}.dialog-call{font-size:13px}
+  #copy-status{font-size:12px;line-height:1.7}
+  .breadcrumb{font-size:12px;margin-bottom:28px}
+  .subhero h1{font-size:clamp(40px,10.5vw,62px);line-height:1.08}
+  .subhero-aside{gap:22px}.subhero-aside p,.wallpaper-subhero .subhero-aside p{font-size:15px;line-height:1.8}
+  .big-asterisk{margin:0}.big-asterisk>.icon{width:44px;height:44px}
+  .prep-content{padding-block:30px 50px}.prep-sidebar{margin-bottom:32px}
+  .checklist-progress{padding:24px;gap:12px 16px;grid-template-columns:1fr auto}
+  .checklist-progress>.eyebrow{font-size:10px}.progress-count strong{font-size:48px}.progress-count span{font-size:21px}
+  .checklist-progress>p{font-size:12px;line-height:1.65;max-width:170px}
+  .checklist-actions{gap:16px;align-items:center}.checklist-actions .button{font-size:12px;padding:13px 14px;gap:16px;min-height:46px}.reset-link{font-size:11px;line-height:1.6;padding:6px 0;max-width:112px}
+  .checklist-progress>small{font-size:11px;line-height:1.75}
+  .prep-intro>p{font-size:18px;line-height:1.75;letter-spacing:-.01em}.prep-intro>small{font-size:13px;line-height:1.8}
+  .prep-step,.prep-step:first-of-type{padding-block:32px}
+  .prep-step-heading{gap:16px;margin-bottom:20px}.prep-no{font-size:39px;min-width:43px}
+  .prep-step-heading .eyebrow{font-size:9px;line-height:1.6}.prep-step h2{font-size:28px;line-height:1.25;margin-top:8px}
+  .prep-description{font-size:15px;line-height:1.8;margin-bottom:22px}.check-items{gap:12px}
+  .check-item{font-size:15px;line-height:1.8;gap:14px;padding:18px 16px}.custom-check{width:23px;height:23px;margin-top:2px}
+  .prep-finish{padding:24px 20px;gap:16px;align-items:flex-start}.prep-finish>span>.icon{width:28px;height:28px}
+  .prep-finish h3{font-size:18px;line-height:1.45}.prep-finish p{font-size:14px;line-height:1.8}
+  .texture-section{padding-block:46px 54px}.texture-content h2{font-size:36px;line-height:1.12;margin-bottom:24px}
+  .texture-tabs{gap:6px;margin-bottom:26px}.texture-tabs button{font-size:14px;min-height:48px;padding:12px 16px}
+  .texture-content .eyebrow{font-size:10px}.texture-content h3{font-size:24px;line-height:1.4;margin:14px 0 18px}
+  .texture-content p{font-size:15px;line-height:1.85}.texture-content [role=tabpanel]{min-height:0;margin-bottom:24px}
+  .texture-preview{height:345px}.sample-label strong{font-size:46px;line-height:1.1}.sample-label>span:first-child,.sample-label>span:last-child{font-size:10px;line-height:1.6}
+  .wallpaper-message{padding-block:44px}.message-grid{grid-template-columns:1fr;gap:26px}.message-symbol{justify-content:flex-start}.message-symbol>.icon{width:58px;height:58px;stroke-width:1.5}
+  .message-grid h2{font-size:53px;line-height:1.1;margin:20px 0 24px}.message-grid p{font-size:15px;line-height:1.8;max-width:none}.message-grid .button{font-size:14px}
+}
+
+@media screen and (max-width:360px){
+  .wrap{width:calc(100% - 32px)}.brand-strip>.brand-strip-inner{width:calc(100% - 32px);gap:10px;font-size:25px}.brand-strip .brand-strip-inner>.icon{width:18px;height:18px}
+  .hero h1{font-size:13.2vw}.hero .eyebrow{font-size:8px}.hero-actions .button{font-size:13px}
+  .section-heading h2,.prep-teaser-grid h2,.texture-content h2{font-size:32px}
+  .checklist-progress{padding:20px;gap:12px}.checklist-progress>p{font-size:11px}.progress-count strong{font-size:42px}.progress-count span{font-size:19px}
+  .checklist-actions .button{font-size:11px;padding:12px}.reset-link{font-size:10px;max-width:100px}
+  .phone-link{font-size:29px}.prep-step h2{font-size:26px}.check-item{font-size:15px;padding:16px 14px;gap:12px}
+  .dialog-actions .button{font-size:11px;gap:8px}.dialog-phone{font-size:27px}.dialog-actions .button>.messenger-icon{width:19px;height:19px}
+}
